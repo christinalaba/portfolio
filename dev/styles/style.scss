@@ -1,16 +1,11 @@
-@import 'setup';
+@import 'normalize';
 @import 'theme';
+@import 'splashpage';
+@import 'navbar';
+@import 'about';
+@import 'devWork';
+@import 'productWork';
+@import 'contact';
+@import	'footer';
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
-}
 
-img{
-	display: none;
-}
-
-body{
-	background: salmon;
-}
-   

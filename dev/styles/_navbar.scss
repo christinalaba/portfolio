@@ -1,0 +1,32 @@
+nav{
+    position: fixed;
+    padding: 20px 0;
+    height: 80px;
+    width: 100%;
+    background: white;
+}
+
+ul{
+    display: flex;
+    a{
+        text-decoration: none;
+        color: $blue;
+        margin-right: 15px;
+        li{
+         transition: all 0.3s ease;
+        }
+         &:last-child{
+            margin-right: 0;
+            }
+        &:hover{
+            color: #A3EACD;
+        }
+    }
+   
+    
+}
+
+.navLists{
+    display: flex;
+    justify-content: space-between;
+}

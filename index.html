@@ -7,12 +7,33 @@
 	<title>Christina Laba Portfolio</title>
 	<link rel="stylesheet" href="public/styles/style.css">
 	<script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Prata" rel="stylesheet">
 </head>
 
 <body>
+<!-- nav bar -->
+	<nav>
+		<div class="navLists wrapper">
+			<ul class="portfolioToggle clearfix">
+				<a href="#devWork"><li>Web</li></a>
+				<!-- <a href=""><li>/</li></a> -->
+				<a href=""><li>Product</li></a>
+			</ul>
 
+			<ul class="menu clearfix">
+				
+				<a href="#about"><li>About</li></a>
+				<a href="#devWork"><li>Work</li></a>
+				<a href="#contact"><li>Contact</li></a>
+			</ul>
+		</div>
+	</nav>
+
+
+
+<!-- splashpage -->
 	<header id="splashPage">
-		<div class="headingText">
+		<div class="wrapper headingText">
 			<h1>Christina Laba</h1>
 			<p>Web Developer</p>
 			<p>Building a better internet, one div at a time</p>
@@ -20,7 +41,7 @@
 		
 		<div class="shapeContainer">
 			<div class="shape yellowCircle">
-				<svg width="77px" height="79px" viewBox="0 0 77 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<svg viewBox="0 0 77 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
 					<desc>Created with Sketch.</desc>
 					<defs></defs>
@@ -112,105 +133,185 @@
 			</div>
 		</div>
 
+		<div class="mouse-down">
+			<div class="bullet"></div>
+		</div>
 	</header>
 
 
-	<nav>
-		<ul class="portfolioToggle">
-			<li>Web</li>
-			<li>Product</li>
-		</ul>
 
-		<ul class="menu">
-			<li>About</li>
-			<li>Work</li>
-			<li>Contact</li>
-		</ul>
-	</nav>
-
-
-	<div id="about">
-		<img src="./public/styles/assets/profilephoto.jpg" alt="Photo of web developr Christina laba">
+<!-- about -->
+	<div id="about" class="clearfix">
+		<img class="profilePhoto2" src="./public/styles/assets/profilephoto.jpg" alt="Photo of web developr Christina laba">
 		<div class="aboutContainer">
-			<div class="aboutText">
+			<img class="profilePhoto" src="./public/styles/assets/profilephoto.jpg" alt="Photo of web developr Christina laba">
+			
+			<div class="aboutText wrapper">
 				<h2>About</h2>
-				<p>Product designer turned web-developed based out of Toronto. Challenging myself and learning new things to continue growing in an industry that never sleeps</p>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit qui praesentium consequuntur debitis nesciunt sit aut deleniti labore eum cum, eveniet minus eius obcaecati corporis voluptatum error ipsam ipsa provident.Product designer turned web-developed based out of Toronto. Challenging myself and learning new things to continue growing in an industry that never sleeps</p>
 			</div>
-		</div>
-
-		<div class="shape blueSquare">
-			<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				<!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-				<desc>Created with Sketch.</desc>
-				<defs></defs>
-				<g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-					<g id="01---Home" transform="translate(-1125.000000, -4659.000000)" stroke="#ABD5FF" stroke-width="5">
-						<rect id="Shape" transform="translate(1157.933493, 4691.498798) rotate(15.000000) translate(-1157.933493, -4691.498798) "
-						x="1134.30939" y="4667.8747" width="47.2481959" height="47.2481959"></rect>
+			<div class="shape blueSquare">
+				<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+					<desc>Created with Sketch.</desc>
+					<defs></defs>
+					<g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g id="01---Home" transform="translate(-1125.000000, -4659.000000)" stroke="#ABD5FF" stroke-width="5">
+							<rect id="Shape" transform="translate(1157.933493, 4691.498798) rotate(15.000000) translate(-1157.933493, -4691.498798) "
+							x="1134.30939" y="4667.8747" width="47.2481959" height="47.2481959"></rect>
+						</g>
 					</g>
-				</g>
-			</svg>
+				</svg>
+			</div>
 		</div>
-	</div>
+		</div>
 
 
-	<main id="work">
-		<section id="vaporwave">
-			<div class="vwaveLaptop">
-				<img src="./dev/styles/assets/mockup-laptop-black.png" alt="laptop screen">
-				<img src="./dev/styles/assets/vwave.jpg" alt="vaporwave website">
+<!-- WORK -->
+	<main id="devWork">
+		
+		<section id="vaporwave" class="clearfix">
+			<div class="left">
+				<div class="vwaveLaptop wrapper">
+					<div class="vapor-landingPage">
+						<p>Vaporwave</p>
+					</div>
+					<img src="./public/styles/assets/mockup-laptop-black.png" alt="laptop screen">
+				</div>
 			</div>
-			<div class="vwaveText">
-				<h2>Vaporwave Album</h2>
-				<h3>Project</h3>
+			
+			<div class="right">
+				<div class="vwaveText wrapper">
+					<h2>Vaporwave Album</h2>
+					<h3>Project</h3>
 					<p>Vaporwave is an internet born music genre and art movement that emerged in the early 2010s. It gained a following through the tumblr music scene, with reddit following suit. As a tribute to this “A E S T H E T I C”, Vapor-Art.com allows users to play with images and text to create a piece of A R T.</p>
-				<h3>Technology</h3>
+					<h3>Technology</h3>
 					<p>Javascript / JQuery / Scss / Html</p>
-			</div>
+				</div>
+				<div class="shape pinkWave">
+					<svg width="130px" height="14px" viewBox="0 0 130 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="01---Home" transform="translate(-971.000000, -2050.000000)" fill-rule="nonzero" fill="#FFD4D4">
+								<path d="M1098.83333,2050.77714 C1092.81433,2050.77714 1089.71167,2053.34464 1086.973,2055.60664 C1084.48567,2057.66714 1082.3385,2059.4438 1077.8795,2059.4438 C1073.4205,2059.4438 1071.27117,2057.66497 1068.78383,2055.60664 C1066.04517,2053.34464 1062.94467,2050.77714 1056.92567,2050.77714 C1050.911,2050.77714 1047.80833,2053.34464 1045.07183,2055.6088 C1042.58667,2057.66714 1040.4395,2059.4438 1035.98483,2059.4438 C1031.528,2059.4438 1029.38083,2057.66714 1026.8935,2055.60664 C1024.157,2053.34464 1021.0565,2050.77714 1015.03967,2050.77714 C1009.025,2050.77714 1005.9245,2053.34464 1003.188,2055.60664 C1000.70067,2057.66714 998.5535,2059.4438 994.101,2059.4438 C989.646333,2059.4438 987.501333,2057.66714 985.016167,2055.6088 C982.281833,2053.34464 979.181333,2050.77714 973.166667,2050.77714 C971.970667,2050.77714 971,2051.7478 971,2052.9438 C971,2054.1398 971.970667,2055.11047 973.166667,2055.11047 C977.619167,2055.11047 979.766333,2056.88714 982.2515,2058.94764 C984.988,2061.20964 988.086333,2063.77714 994.101,2063.77714 C1000.11567,2063.77714 1003.21617,2061.20964 1005.95267,2058.94764 C1008.43783,2056.88714 1010.585,2055.11047 1015.03967,2055.11047 C1019.4965,2055.11047 1021.64367,2056.88714 1024.131,2058.94764 C1026.8675,2061.20964 1029.968,2063.77714 1035.98483,2063.77714 C1041.9995,2063.77714 1045.1,2061.20964 1047.8365,2058.94764 C1050.32167,2056.88714 1052.471,2055.11047 1056.92567,2055.11047 C1061.38467,2055.11047 1063.53183,2056.88714 1066.01917,2058.94764 C1068.75783,2061.20964 1071.8605,2063.77714 1077.8795,2063.77714 C1083.89633,2063.77714 1086.999,2061.20964 1089.73767,2058.94764 C1092.225,2056.8893 1094.37433,2055.11047 1098.83333,2055.11047 C1100.0315,2055.11047 1101,2054.1398 1101,2052.9438 C1101,2051.7478 1100.0315,2050.77714 1098.83333,2050.77714 Z"
+								id="Shape"></path>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>	
 		</section>
 		
-		<section id="baloo">
-			<div class="balootablet">
-				<img src="" alt="">
+		<section id="baloo" class="clearfix">
+			<div class="left">
+				<div class="balooText wrapper">
+					<h2>Baloos Ballons</h2>
+					<h3>Project</h3>
+					<p>Baloos Balloon is a fully responsive game inspire by my feline friend. It was my first complete build using React. I used Firebase database to store my Leaderboard stats</p>
+					<h3>Technology</h3>
+					<p>React / Javascript / Firebase / Gulp / Scss / Html</p>
+				</div>
+			</div>
+
+			<div class="right">
+				<div class="balooTablet">
+					<img src="./public/styles/assets/mockup-tablet-black.png" alt="tablet screen">
+					<img src="./public/styles/assets/baloo.png" alt="balloon popping game website">
+				</div>
 			</div>
 		</section>
+
+		<section id="soundtrak" class="clearfix wrapper">
+			<div class="left">
+				<div class="soundtrakPhone">
+					<img src="./public/styles/assets/mockup-phone-white.png" alt="phone screen">
+					<img src="./public/styles/assets/soundtrak.png" alt="music website">
+				</div>
+			</div>
+
+			<div class="right">
+				<h2>Soundtrak</h2>
+				<div class="balooText">
+					<h3>Project</h3>
+					<p>Soundtrak was a group project in an mock agency project setting. Working form the brief we utalized the MovieDb to alllow the user to filter movies by genre. Once the movie is selected we use the Spotify API to find the soundtrack to this movie. If there aren't any availble another call is made to find an appropriate playlist that spotify users have created.</p>
+					<h3>Technology</h3>
+					<p>React / Javascript / Stotify and MovieDB APIs / Gulp / Scss /Html</p>
+				</div>
+			</div>
+			<div class="shape tealTriangle">
+				<svg width="96px" height="64px" viewBox="0 0 96 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+					<desc>Created with Sketch.</desc>
+					<defs></defs>
+					<g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g id="01---Home" transform="translate(-500.000000, -3948.000000)" stroke-width="5" stroke="#A3EACD">
+							<polygon id="Shape" transform="translate(548.598305, 3965.213266) rotate(31.000000) translate(-548.598305, -3965.213266) "
+							 points="577.99409 3933.36863 577.99409 3997.0579 519.202521 3997.0579"></polygon>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</section>
+
+		<section id="psdConversion" class="wrapper clearfix">
+			<div class="left wrapper">
+				<h2>PSD Conversion</h2>
+				<div class="psdText">
+					<h3>Project</h3>
+					<p>Blog Gem is a fully resposive 3 page blog site. </p>
+					<h3>Technology</h3>
+					<p>Scss / Html</p>
+				</div>
+			</div>
+
+			<div class="right wrapper">
+				<div class="psdMockUps">
+					<img src="./public/styles/assets/mockup-laptop-white.png" alt="laptop screen">
+					<img src="" alt="photoshop in laptop">
+					<img src="./public/styles/assets/mockup-tablet-white.png" alt="tablet">
+					<img src="" alt="photoshop file in tablet">
+					<img src="./public/styles/assets/mockup-phone-white.png" alt="phone screen">
+					<img src="" alt="photoshop file in phone">
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 
+	<div id="contact">
+		<h2>Contact</h2>
+		<div class="social-icons">
+			<i class="fab fa-linkedin-in"></i>
+			<i class="fab fa-medium-m"></i>
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-codepen"></i>
+			<i class="fab fa-github"></i>
+			<i class="fab fa-behance"></i>
+		</div>
 
-<div class="shape tealTriangle">
-	<svg width="96px" height="64px" viewBox="0 0 96 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-		<desc>Created with Sketch.</desc>
-		<defs></defs>
-		<g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			<g id="01---Home" transform="translate(-500.000000, -3948.000000)" stroke-width="5" stroke="#A3EACD">
-				<polygon id="Shape" transform="translate(548.598305, 3965.213266) rotate(31.000000) translate(-548.598305, -3965.213266) "
-				 points="577.99409 3933.36863 577.99409 3997.0579 519.202521 3997.0579"></polygon>
-			</g>
-		</g>
-	</svg>
-</div>
+		<form action="">
+			<label for="name">Name</label>
+			<input type="text" class="name">
 
-
-
-
-<div class="shape pinkWave">
-	<svg width="130px" height="14px" viewBox="0 0 130 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-		<desc>Created with Sketch.</desc>
-		<defs></defs>
-		<g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			<g id="01---Home" transform="translate(-971.000000, -2050.000000)" fill-rule="nonzero" fill="#FFD4D4">
-				<path d="M1098.83333,2050.77714 C1092.81433,2050.77714 1089.71167,2053.34464 1086.973,2055.60664 C1084.48567,2057.66714 1082.3385,2059.4438 1077.8795,2059.4438 C1073.4205,2059.4438 1071.27117,2057.66497 1068.78383,2055.60664 C1066.04517,2053.34464 1062.94467,2050.77714 1056.92567,2050.77714 C1050.911,2050.77714 1047.80833,2053.34464 1045.07183,2055.6088 C1042.58667,2057.66714 1040.4395,2059.4438 1035.98483,2059.4438 C1031.528,2059.4438 1029.38083,2057.66714 1026.8935,2055.60664 C1024.157,2053.34464 1021.0565,2050.77714 1015.03967,2050.77714 C1009.025,2050.77714 1005.9245,2053.34464 1003.188,2055.60664 C1000.70067,2057.66714 998.5535,2059.4438 994.101,2059.4438 C989.646333,2059.4438 987.501333,2057.66714 985.016167,2055.6088 C982.281833,2053.34464 979.181333,2050.77714 973.166667,2050.77714 C971.970667,2050.77714 971,2051.7478 971,2052.9438 C971,2054.1398 971.970667,2055.11047 973.166667,2055.11047 C977.619167,2055.11047 979.766333,2056.88714 982.2515,2058.94764 C984.988,2061.20964 988.086333,2063.77714 994.101,2063.77714 C1000.11567,2063.77714 1003.21617,2061.20964 1005.95267,2058.94764 C1008.43783,2056.88714 1010.585,2055.11047 1015.03967,2055.11047 C1019.4965,2055.11047 1021.64367,2056.88714 1024.131,2058.94764 C1026.8675,2061.20964 1029.968,2063.77714 1035.98483,2063.77714 C1041.9995,2063.77714 1045.1,2061.20964 1047.8365,2058.94764 C1050.32167,2056.88714 1052.471,2055.11047 1056.92567,2055.11047 C1061.38467,2055.11047 1063.53183,2056.88714 1066.01917,2058.94764 C1068.75783,2061.20964 1071.8605,2063.77714 1077.8795,2063.77714 C1083.89633,2063.77714 1086.999,2061.20964 1089.73767,2058.94764 C1092.225,2056.8893 1094.37433,2055.11047 1098.83333,2055.11047 C1100.0315,2055.11047 1101,2054.1398 1101,2052.9438 C1101,2051.7478 1100.0315,2050.77714 1098.83333,2050.77714 Z"
-				id="Shape"></path>
-			</g>
-		</g>
-	</svg>
-</div>
+			<label for="">Message</label>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</form>
+		<p>hello@christinalaba.com</p>
+	</div>
 
 
-
+	<footer>
+		<div class="backToTop">
+			<img src="./public/styles/assets/Arrow.png" alt="">
+		</div>
+		<div class="credits">
+			<p>&copy; Christina Laba</p>
+			<p>Select photography by Pam Lau, Rohaan Agalawatte and Danielle Schon</p>
+		</div>
+	</footer>
 
 	<script src="public/scripts/main.js"></script>
 </body>

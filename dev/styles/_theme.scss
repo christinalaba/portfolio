@@ -1,3 +1,43 @@
-$accent:#FFEFD6;
+$primarycolor: #F4E8E2;
+$blue: #26496C;
 
-$bold:700;
+// $accentfont: 'arial';
+
+$bold: 700;
+
+
+$primaryfont: 'Lora', serif;
+$secondfont:  'Josefin Sans', sans-serif;
+
+// $secondfont: 'Yanone Kaffeesatz', sans-serif;
+// $primaryfont: 'PT Sans Narrow', sans-serif;
+
+   html{
+	font-size: 62.5%;
+	font-family: $secondfont;
+	color: $blue;
+}
+
+.wrapper{
+	max-width: 1170px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1.4rem;
+	
+}
+
+h2{
+	font-family: $primaryfont;
+}
+
+ul{
+	padding: 0;
+	li{
+		list-style: none;
+	}
+}
+
+img{
+	width: 300px;
+}
+

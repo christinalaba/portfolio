@@ -1,0 +1,24 @@
+section{
+    height: 100vh;
+}
+
+.right, .left{
+    width: 50%;
+    margin-top: 10%;
+    height: 90vh;
+    float: left;
+}
+.vwaveLaptop{
+    display: flex;
+    justify-content: center;
+    .vapor-landingPage{
+       width: 75%;
+       height: 297px;
+       background-color: black;
+       margin-top: 24px;
+    }
+    img{
+        position: absolute;
+        width: 45%;
+    }
+}
