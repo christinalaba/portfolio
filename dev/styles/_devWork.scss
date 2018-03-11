@@ -1,24 +1,154 @@
 section{
     height: 100vh;
+    border: 1px solid pink;
 }
 
 .right, .left{
     width: 50%;
-    margin-top: 10%;
     height: 90vh;
     float: left;
+    display: flex;
 }
+
+
+//VAPORWAVE
 .vwaveLaptop{
     display: flex;
     justify-content: center;
-    .vapor-landingPage{
-       width: 75%;
-       height: 297px;
-       background-color: black;
-       margin-top: 24px;
-    }
+    align-items: center;
+    padding-top: 15%;
     img{
         position: absolute;
         width: 45%;
+        overflow: hidden;
+    }
+    video{
+        width: 90%;
+        
+    }
+}
+
+#vaporwave{
+    .right{
+        flex-direction: column-reverse;
+        .vwaveText{
+            padding-right: 10%;
+            position: relative;
+        }
+    }
+    .left{
+        // margin-top: 10%;
+        height: 45vh;
+    }
+}
+
+h3{
+    margin-top: 30px;
+}
+
+.pinkWave{
+    top: 5%;
+    right: 55%;
+}
+
+
+@media (max-width: 800px){
+    .right, .left{
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .vwaveLaptop{
+        img{
+            padding-bottom: 15px;
+            width: 85%;
+        }
+        video{
+            width: 90%;
+        }
+    }
+
+    #vaporwave{
+        .right{
+            .vwaveText{
+                padding-right:0;
+                padding-top: 10vh;
+                position: relative;
+            }
+        }
+        .left{
+            height: 45vh;
+        }
+    }
+}
+
+@media (max-width:500px){
+    #vaporwave .left {
+        height: 40vh;
+    }
+    #vaporwave .right .vwaveText {
+        padding-top:0; 
+    }
+    h3 {
+        margin-top: 0px;
+    }
+}
+
+//BALOOS BALOONS
+#baloo{
+    .left{
+        background: $primarycolor;
+        width: 75%;
+        padding: 10%;
+        height: auto;
+    }
+    .right{
+        flex-direction: column-reverse;
+        width: 25%;
+        img{
+            margin: 0 0 5% -50%;
+        }
+    }
+}
+
+@media (max-width:800px){
+    #baloo{
+        .left{
+            width: 100%;
+            margin-top: 10%;
+            padding: 7%;
+        }
+        .right{
+            width: 100%;
+            img{
+                margin: -7% auto;
+                width: 50%;
+            }
+        
+        }
+    }
+
+     .balooText{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+    #baloo{
+        .right{
+            width: 100%;
+            height: auto;
+            img{
+                margin: -8% auto;
+                width: 50%;
+            }
+        
+        }
+    }
+}
+
+@media (max-width:400px){
+    .wrapper{
+        line-height: 2.5rem;
     }
 }

@@ -2,6 +2,7 @@
     background: $primarycolor;
     height: 100vh;
     position: relative;
+    z-index: 9;
     .headingText{
         margin: 0 auto;
         text-align: center;
@@ -69,21 +70,19 @@ h1{
 }
 
 .mouse-down {
-  position: absolute;
+    position: absolute;
     left: 50%;
     top: 93%;
     -webkit-transform: translate(-50%, -93%);
     -ms-transform: translate(-50%, -93%);
     transform: translate(-50%, -93%);
     .bullet {
-    width:1px;
-    height: 4vh;
-    background:$blue;
-    margin: auto auto;
-    border-radius:8px;
-    position:relative;
-    -webkit-animation: scrollDownUp 3s infinite; /* Chrome, Safari, Opera */
-        animation: scrollDownUp 3s infinite;
+        width:1px;
+        height: 4vh;
+        background:$blue;
+        position:relative;
+        -webkit-animation: scrollDownUp 2s infinite;
+        animation: scrollDownUp 2s infinite;
     }
 }
 

@@ -13,7 +13,6 @@
     background-color: $primarycolor;
     display: flex;
     align-items: center;
-    line-height:3rem;
     float: right;
     width: 75%;
     height: 60vh;
@@ -22,7 +21,8 @@
 }
 
 .aboutText{
-    width: 40%;
+    width: 70%;
+    padding-left: 100px;    
 }
 
 .blueSquare{
@@ -58,13 +58,40 @@
         margin: 22% 0 -8%;
         top: 25%;
         z-index: 9;
-}
-    
+    }
 
     #about{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    
+}
+
+
+@media (max-width: 500px){
+    .aboutText {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 400px){
+    .wrapper{
+        font-size: 1.2rem;
+    }
+    .shape svg {
+        width: 7vh;
+        height: 7vh;
+    }
+    .aboutContainer{
+        height: 55vh;
+    }
+}
+
+@media (max-width: 320px){
+    .wrapper{
+        line-height: 2.2rem;
     }
     
 }

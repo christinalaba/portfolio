@@ -140,7 +140,8 @@ html {
   max-width: 1170px;
   width: 90%;
   margin: 0 auto;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  line-height: 3rem; }
 
 h2 {
   font-family: "Lora", serif; }
@@ -156,7 +157,8 @@ img {
 #splashPage {
   background: #F4E8E2;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  z-index: 9; }
   #splashPage .headingText {
     margin: 0 auto;
     text-align: center;
@@ -218,12 +220,9 @@ h1 {
     width: 1px;
     height: 4vh;
     background: #26496C;
-    margin: auto auto;
-    border-radius: 8px;
     position: relative;
-    -webkit-animation: scrollDownUp 3s infinite;
-    /* Chrome, Safari, Opera */
-    animation: scrollDownUp 3s infinite; }
+    -webkit-animation: scrollDownUp 2s infinite;
+    animation: scrollDownUp 2s infinite; }
 
 @-webkit-keyframes scrollDownUp {
   0% {
@@ -243,10 +242,9 @@ h1 {
 
 nav {
   position: fixed;
-  padding: 20px 0;
-  height: 80px;
   width: 100%;
-  background: white; }
+  background: white;
+  z-index: 1; }
 
 ul {
   display: -webkit-box;
@@ -289,7 +287,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 3rem;
   float: right;
   width: 75%;
   height: 60vh;
@@ -297,7 +294,8 @@ ul {
   position: relative; }
 
 .aboutText {
-  width: 40%; }
+  width: 70%;
+  padding-left: 100px; }
 
 .blueSquare {
   position: absolute;
@@ -335,14 +333,34 @@ ul {
         -ms-flex-align: center;
             align-items: center; } }
 
+@media (max-width: 500px) {
+  .aboutText {
+    width: 95%; } }
+
+@media (max-width: 400px) {
+  .wrapper {
+    font-size: 1.2rem; }
+  .shape svg {
+    width: 7vh;
+    height: 7vh; }
+  .aboutContainer {
+    height: 55vh; } }
+
+@media (max-width: 320px) {
+  .wrapper {
+    line-height: 2.2rem; } }
+
 section {
-  height: 100vh; }
+  height: 100vh;
+  border: 1px solid pink; }
 
 .right, .left {
   width: 50%;
-  margin-top: 10%;
   height: 90vh;
-  float: left; }
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .vwaveLaptop {
   display: -webkit-box;
@@ -350,15 +368,101 @@ section {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  .vwaveLaptop .vapor-landingPage {
-    width: 75%;
-    height: 297px;
-    background-color: black;
-    margin-top: 24px; }
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15%; }
   .vwaveLaptop img {
     position: absolute;
-    width: 45%; }
+    width: 45%;
+    overflow: hidden; }
+  .vwaveLaptop video {
+    width: 90%; }
+
+#vaporwave .right {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+  #vaporwave .right .vwaveText {
+    padding-right: 10%;
+    position: relative; }
+
+#vaporwave .left {
+  height: 45vh; }
+
+h3 {
+  margin-top: 30px; }
+
+.pinkWave {
+  top: 5%;
+  right: 55%; }
+
+@media (max-width: 800px) {
+  .right, .left {
+    width: 100%;
+    height: auto;
+    float: none; }
+  .vwaveLaptop img {
+    padding-bottom: 15px;
+    width: 85%; }
+  .vwaveLaptop video {
+    width: 90%; }
+  #vaporwave .right .vwaveText {
+    padding-right: 0;
+    padding-top: 10vh;
+    position: relative; }
+  #vaporwave .left {
+    height: 45vh; } }
+
+@media (max-width: 500px) {
+  #vaporwave .left {
+    height: 40vh; }
+  #vaporwave .right .vwaveText {
+    padding-top: 0; }
+  h3 {
+    margin-top: 0px; } }
+
+#baloo .left {
+  background: #F4E8E2;
+  width: 75%;
+  padding: 10%;
+  height: auto; }
+
+#baloo .right {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 25%; }
+  #baloo .right img {
+    margin: 0 0 5% -50%; }
+
+@media (max-width: 800px) {
+  #baloo .left {
+    width: 100%;
+    margin-top: 10%;
+    padding: 7%; }
+  #baloo .right {
+    width: 100%; }
+    #baloo .right img {
+      margin: -7% auto;
+      width: 50%; }
+  .balooText {
+    width: 100%; } }
+
+@media (max-width: 600px) {
+  #baloo .right {
+    width: 100%;
+    height: auto; }
+    #baloo .right img {
+      margin: -8% auto;
+      width: 50%; } }
+
+@media (max-width: 400px) {
+  .wrapper {
+    line-height: 2.5rem; } }
 
 .backtoTop img {
   width: 10px; }

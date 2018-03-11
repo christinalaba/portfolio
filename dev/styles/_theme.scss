@@ -12,10 +12,10 @@ $secondfont:  'Josefin Sans', sans-serif;
 // $secondfont: 'Yanone Kaffeesatz', sans-serif;
 // $primaryfont: 'PT Sans Narrow', sans-serif;
 
-   html{
-	font-size: 62.5%;
-	font-family: $secondfont;
-	color: $blue;
+html{
+font-size: 62.5%;
+font-family: $secondfont;
+color: $blue;
 }
 
 .wrapper{
@@ -23,7 +23,7 @@ $secondfont:  'Josefin Sans', sans-serif;
 	width: 90%;
 	margin: 0 auto;
 	font-size: 1.4rem;
-	
+	line-height:3rem;
 }
 
 h2{
