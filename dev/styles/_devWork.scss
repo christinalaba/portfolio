@@ -20,11 +20,14 @@ section{
     img{
         position: absolute;
         width: 45%;
+        max-width: 500px;
         overflow: hidden;
     }
+
+
     video{
         width: 90%;
-        
+        max-width: 500px;
     }
 }
 
@@ -37,8 +40,7 @@ section{
         }
     }
     .left{
-        // margin-top: 10%;
-        height: 45vh;
+        height: 60vh;
     }
 }
 
@@ -78,6 +80,7 @@ h3{
         }
         .left{
             height: 45vh;
+            justify-content: center;
         }
     }
 }
@@ -87,7 +90,7 @@ h3{
         height: 40vh;
     }
     #vaporwave .right .vwaveText {
-        padding-top:0; 
+        padding: 0;
     }
     h3 {
         margin-top: 0px;
@@ -98,15 +101,28 @@ h3{
 #baloo{
     .left{
         background: $primarycolor;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
         width: 75%;
-        padding: 10%;
-        height: auto;
+        height: 60vh;
+        margin-top: 10%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(235, 235, 235, 0.2);
+        &:hover{
+            cursor: url('../../public/styles/assets/fightCat.png')20 20, auto;
+        }
+        .balooText{
+            max-width: 600px;
+        }
     }
     .right{
         flex-direction: column-reverse;
         width: 25%;
         img{
             margin: 0 0 5% -50%;
+            &:hover{
+            cursor: url('../../public/styles/assets/fightCat.png')20 20, auto;
+        }
         }
     }
 }
@@ -114,15 +130,15 @@ h3{
 @media (max-width:800px){
     #baloo{
         .left{
-            width: 100%;
             margin-top: 10%;
-            padding: 7%;
+            width: 100%;
+            padding: 5%;
         }
         .right{
             width: 100%;
             img{
-                margin: -7% auto;
-                width: 50%;
+                margin: -15% auto;
+                width: 40%;
             }
         
         }
@@ -136,13 +152,11 @@ h3{
 @media (max-width:600px){
     #baloo{
         .right{
-            width: 100%;
-            height: auto;
+            // height: auto;
             img{
-                margin: -8% auto;
+                margin: -15% auto;
                 width: 50%;
             }
-        
         }
     }
 }
@@ -152,3 +166,148 @@ h3{
         line-height: 2.5rem;
     }
 }
+
+
+//SOUNTRAK
+#soundtrak{
+    .left{
+        position: relative;
+        margin-top: 10vh;
+        .soundtrakPhone{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 30vh;
+                }
+            }
+        .tealTriangle{
+            right: 20%;
+            bottom: 20%;
+            z-index: -1;
+        }
+    }
+    
+    .right{
+        flex-direction: column-reverse;
+    }
+}
+
+.soundtrakLogo{
+  height: 100px;
+  width: 100px;
+  display:flex;
+  align-items: center;
+  position: absolute;
+    margin-top: -128px;
+}
+
+.line{
+  width:10%;
+  border-radius: 4px;
+  margin-right:12px;
+  animation: pulse 2s ease-in-out infinite   
+}
+
+.smallLeft{
+  height: 24%;
+  background-color: #78C8D5;
+  animation-delay: 1s;
+}
+
+.mediumLeft{
+  height: 73%;
+  background-color: #78C8D9;
+  animation-delay: 1.5s;
+}
+
+.middle{
+  height: 100%;
+  background-color:#78C8D9;
+}
+
+.mediumRight{
+  height: 41%;
+  background-color: #FF4738;
+  animation-delay: 2s;
+}
+
+.smallRight{
+  height: 13%;
+  background-color: #60948B;
+  animation-delay: 2.5s;
+  margin-right: 0;
+}
+
+@keyframes pulse {
+  50%{
+    transform: scaleY(.7);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
+
+@media (max-width: 800px){
+    #soundtrak{
+        flex-direction: column;
+        display: flex;
+        .left{
+            margin-top: 0px;
+            .soundtrakPhone{
+                width: 28vh;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .right{
+            margin-top: 10vh;
+            order: -1;
+        }
+    }
+}
+
+
+@media (max-width: 600px){
+    #soundtrak{
+        .left{
+            .soundtrakPhone{
+              
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    #soundtrak{
+        .left{
+            .soundtrakPhone{
+                width: 15vh;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .right{
+            h2{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+//PSD Conversion
+
+.psdMockUps{
+    img{
+        width: 30%;
+    }
+}
+
+
