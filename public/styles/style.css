@@ -154,6 +154,9 @@ ul {
 img {
   width: 300px; }
 
+a {
+  color: inherit; }
+
 #splashPage {
   background: #F4E8E2;
   height: 100vh;
@@ -279,9 +282,9 @@ ul {
 
 .profilePhoto {
   position: absolute;
-  top: -30px;
-  left: -50px;
-  width: 26%;
+  top: -40px;
+  left: -80px;
+  width: 34%;
   max-width: 300px;
   -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 10px 18px rgba(235, 235, 235, 0.2);
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 10px 18px rgba(235, 235, 235, 0.2); }
@@ -329,7 +332,7 @@ ul {
     height: 50vh; }
   .profilePhoto2 {
     display: block;
-    width: 35%;
+    width: 45%;
     margin: 22% 0 -8%;
     top: 25%;
     z-index: 9; }
@@ -347,7 +350,7 @@ ul {
 
 @media (max-width: 500px) {
   .aboutText {
-    width: 95%; } }
+    width: 100%; } }
 
 @media (max-width: 400px) {
   .wrapper {
@@ -363,8 +366,7 @@ ul {
     line-height: 2.2rem; } }
 
 section {
-  height: 100vh;
-  border: 1px solid pink; }
+  height: 100vh; }
 
 .right, .left {
   width: 50%;
@@ -391,7 +393,7 @@ section {
     max-width: 500px;
     overflow: hidden; }
   .vwaveLaptop video {
-    width: 90%;
+    width: 75%;
     max-width: 500px; }
 
 #vaporwave .right {
@@ -422,7 +424,7 @@ h3 {
     padding-bottom: 15px;
     width: 85%; }
   .vwaveLaptop video {
-    width: 90%; }
+    width: 72%; }
   #vaporwave .right .vwaveText {
     padding-right: 0;
     padding-top: 10vh;
@@ -432,6 +434,11 @@ h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
+
+@media (max-width: 567px) {
+  .vwaveLaptop video {
+    width: 69%;
+    margin-bottom: 14px; } }
 
 @media (max-width: 500px) {
   #vaporwave .left {
@@ -529,12 +536,12 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin-top: -128px; }
+  margin-top: -96px; }
 
 .line {
   width: 10%;
   border-radius: 4px;
-  margin-right: 12px;
+  margin-right: 12%;
   -webkit-animation: pulse 2s ease-in-out infinite;
           animation: pulse 2s ease-in-out infinite; }
 
@@ -609,12 +616,25 @@ h3 {
     width: 80%; } }
 
 @media (max-width: 500px) {
-  #soundtrak .left .soundtrakPhone {
-    width: 15vh; }
-    #soundtrak .left .soundtrakPhone img {
-      width: 100%; }
+  #soundtrak .left .soundtrakPhone img {
+    width: 67%; }
   #soundtrak .right h2 {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .soundtrakLogo {
+    height: 80px;
+    width: 80px;
+    margin-top: -77px; } }
+
+@media (max-width: 330px) {
+  #soundtrak .left .soundtrakPhone img {
+    width: 48%; }
+  .soundtrakLogo {
+    height: 48px;
+    width: 48px;
+    margin-top: -51px; } }
+
+#psdConversion .left {
+  margin-top: 10vh; }
 
 .psdMockUps img {
   width: 30%; }

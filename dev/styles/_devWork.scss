@@ -1,6 +1,6 @@
 section{
     height: 100vh;
-    border: 1px solid pink;
+    // border: 1px solid pink;
 }
 
 .right, .left{
@@ -26,7 +26,7 @@ section{
 
 
     video{
-        width: 90%;
+        width: 75%;
         max-width: 500px;
     }
 }
@@ -66,7 +66,7 @@ h3{
             width: 85%;
         }
         video{
-            width: 90%;
+            width: 72%;
         }
     }
 
@@ -81,6 +81,15 @@ h3{
         .left{
             height: 45vh;
             justify-content: center;
+        }
+    }
+}
+
+@media (max-width:567px){
+  .vwaveLaptop{
+        video{
+            width: 69%;
+            margin-bottom: 14px;
         }
     }
 }
@@ -200,13 +209,13 @@ h3{
   display:flex;
   align-items: center;
   position: absolute;
-    margin-top: -128px;
+    margin-top: -96px;
 }
 
 .line{
   width:10%;
   border-radius: 4px;
-  margin-right:12px;
+  margin-right:12%;
   animation: pulse 2s ease-in-out infinite   
 }
 
@@ -287,9 +296,8 @@ h3{
     #soundtrak{
         .left{
             .soundtrakPhone{
-                width: 15vh;
                 img{
-                    width: 100%;
+                    width: 67%;
                 }
             }
         }
@@ -299,10 +307,43 @@ h3{
             }
         }
     }
+
+    .soundtrakLogo {
+        height: 80px;
+        width: 80px;
+        margin-top: -77px;
+    }
+}
+
+@media(max-width:330px){
+    #soundtrak{
+        .left{
+            .soundtrakPhone{
+                img{
+                    width:48%;
+                }
+            }
+        }
+    }
+    .soundtrakLogo {
+       height: 48px;
+        width: 48px;
+        margin-top: -51px;
+    }
+    
 }
 
 
 //PSD Conversion
+
+
+#psdConversion{
+    .left{
+        margin-top: 10vh;
+    }
+}
+
+
 
 .psdMockUps{
     img{
