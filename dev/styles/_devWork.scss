@@ -1,6 +1,6 @@
 section{
     height: 100vh;
-    border: 1px solid pink;
+    // border: 1px solid pink;
 }
 
 .right, .left{
@@ -17,17 +17,19 @@ section{
     justify-content: center;
     align-items: center;
     padding-top: 15%;
+    position: relative;
     img{
-        position: absolute;
-        width: 45%;
+        width: 90%;
         max-width: 500px;
         overflow: hidden;
     }
-
-
     video{
-        width: 75%;
+        width: 67%;
         max-width: 500px;
+        position: absolute;
+        left: 15%;
+        top: 35%;
+        z-index: -1
     }
 }
 
@@ -68,6 +70,8 @@ h3{
         }
         video{
             width: 72%;
+            left: 14%;
+            top: 30%;
         }
     }
 
@@ -89,8 +93,8 @@ h3{
 @media (max-width:567px){
   .vwaveLaptop{
         video{
-            width: 69%;
-            margin-bottom: 14px;
+            // width: 69%;
+            // margin-bottom: 14px;
         }
     }
 }
@@ -137,12 +141,25 @@ h3{
     }
 }
 
+@media (max-width:1120px){
+    #baloo{
+        .left{
+            .balooText{
+                width: 60%;
+            }
+        }   
+    }
+}
+
 @media (max-width:800px){
     #baloo{
         .left{
             margin-top: 10%;
             width: 100%;
             padding: 5%;
+            .balooText{
+                width: 100%;
+            }
         }
         .right{
             width: 100%;
@@ -213,7 +230,8 @@ h3{
   width: 100px;
   display:flex;
   align-items: center;
-  position: absolute;
+  position: relative;
+  left: -50%;
     margin-top: -96px;
 }
 
@@ -221,7 +239,7 @@ h3{
   width:10%;
   border-radius: 4px;
   margin-right:12%;
-  animation: pulse 2s ease-in-out infinite   
+  animation: pulse 2s ease-in-out infinite;  
 }
 
 .smallLeft{
@@ -342,13 +360,6 @@ h3{
 
 //PSD Conversion
 
-.psdMockUps{
-    img{
-        width: 100%;
-        overflow: scroll;
-    }
-}
-
 
 #psdConversion{
     position: relative;
@@ -381,17 +392,38 @@ h3{
     }
 }
 
-// .longScroll{
-//    overflow: scroll;
-//     position: absolute;
-//     z-index: 1;
-//     // width: 142%;
-//     top: 51vh;
-//     // background: red;
-//     height: 218px;
-//     left: -190px;
-//     img{
-//     }
-// }
 
+@media (max-width:800px){
+    #psdConversion{
+        .left{
+            margin-top: 10%;
+            width: 100%;
+            padding: 5%;
+        }
+        .right{
+            width: 100%;
+            img{
+                margin: -15% auto;
+                width: 75%;
+                left: 0;
+            }
+        
+        }
+    }
 
+     .psdText{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px){
+    #psdConversion{
+        .right{
+            
+            img{
+                margin: -25% auto;
+                // width: 50%;
+            }
+        }
+    }
+}

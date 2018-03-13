@@ -291,6 +291,7 @@ ul {
 
 .profilePhoto2 {
   display: none;
+  position: relative;
   -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 10px 18px rgba(235, 235, 235, 0.2);
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 10px 18px rgba(235, 235, 235, 0.2); }
 
@@ -334,7 +335,7 @@ ul {
     display: block;
     width: 45%;
     margin: 22% 0 -8%;
-    top: 25%;
+    top: 0%;
     z-index: 9; }
   #about {
     display: -webkit-box;
@@ -366,8 +367,7 @@ ul {
     line-height: 2.2rem; } }
 
 section {
-  height: 100vh;
-  border: 1px solid pink; }
+  height: 100vh; }
 
 .right, .left {
   width: 50%;
@@ -387,15 +387,19 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15%; }
+  padding-top: 15%;
+  position: relative; }
   .vwaveLaptop img {
-    position: absolute;
-    width: 45%;
+    width: 90%;
     max-width: 500px;
     overflow: hidden; }
   .vwaveLaptop video {
-    width: 75%;
-    max-width: 500px; }
+    width: 67%;
+    max-width: 500px;
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    z-index: -1; }
 
 #vaporwave .right {
   -webkit-box-orient: vertical;
@@ -426,7 +430,9 @@ h3 {
     padding-bottom: 15px;
     width: 85%; }
   .vwaveLaptop video {
-    width: 72%; }
+    width: 72%;
+    left: 14%;
+    top: 30%; }
   #vaporwave .right .vwaveText {
     padding-right: 0;
     padding-top: 10vh;
@@ -436,11 +442,6 @@ h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
-
-@media (max-width: 567px) {
-  .vwaveLaptop video {
-    width: 69%;
-    margin-bottom: 14px; } }
 
 @media (max-width: 500px) {
   #vaporwave .left {
@@ -479,11 +480,17 @@ h3 {
     #baloo .right img:hover {
       cursor: url("../../public/styles/assets/fightCat.png") 20 20, auto; }
 
+@media (max-width: 1120px) {
+  #baloo .left .balooText {
+    width: 60%; } }
+
 @media (max-width: 800px) {
   #baloo .left {
     margin-top: 10%;
     width: 100%;
     padding: 5%; }
+    #baloo .left .balooText {
+      width: 100%; }
   #baloo .right {
     width: 100%; }
     #baloo .right img {
@@ -540,7 +547,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: relative;
+  left: -50%;
   margin-top: -96px; }
 
 .line {
@@ -639,10 +647,6 @@ h3 {
     width: 48px;
     margin-top: -51px; } }
 
-.psdMockUps img {
-  width: 100%;
-  overflow: scroll; }
-
 #psdConversion {
   position: relative; }
   #psdConversion .left {
@@ -678,6 +682,24 @@ h3 {
       position: relative;
       width: 65vh;
       left: -30vh; }
+
+@media (max-width: 800px) {
+  #psdConversion .left {
+    margin-top: 10%;
+    width: 100%;
+    padding: 5%; }
+  #psdConversion .right {
+    width: 100%; }
+    #psdConversion .right img {
+      margin: -15% auto;
+      width: 75%;
+      left: 0; }
+  .psdText {
+    width: 100%; } }
+
+@media (max-width: 600px) {
+  #psdConversion .right img {
+    margin: -25% auto; } }
 
 #contact {
   background: #F4E8E2;

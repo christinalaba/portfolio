@@ -13,6 +13,7 @@
 
 .profilePhoto2{
     display: none;
+    position: relative;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 10px 18px rgba(235, 235, 235, 0.2);
 }
 
@@ -62,7 +63,7 @@
         display: block;
         width: 45%;
         margin: 22% 0 -8%;
-        top: 25%;
+        top: 0%;
         z-index: 9;
     }
 

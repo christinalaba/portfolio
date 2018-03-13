@@ -142,10 +142,10 @@
 
 <!-- about -->
 	<div id="about" class="clearfix">
-		<!-- <img class="profilePhoto2" src="./public/styles/assets/profilephoto.jpg" alt="Photo of web developr Christina laba"> -->
+	
 		<video src="./public/styles/assets/video-1520804025.mp4" autoplay loop class="profilePhoto2"></video>
+
 		<div class="aboutContainer">
-			<!-- <img class="profilePhoto" src="./public/styles/assets/profilephoto.jpg" alt="Photo of web developr Christina laba"> -->
 			<video src="./public/styles/assets/video-1520804025.mp4" autoplay loop class="profilePhoto"></video>
 			<div class="aboutText wrapper">
 				<h2>About</h2>
@@ -272,12 +272,9 @@
 			</div>
 
 			<div class="right wrapper">
-				<div class="psdMockUps">
+				<!-- <div class="psdMockUps"> -->
 					<img src="./public/styles/assets/psd-conversion.png" alt="laptop screen">
-					<!-- <div class= "longScroll">
-						<img src="./public/styles/assets/laptop-Conversion.jpg" alt="">
-					</div> -->
-				</div>
+				<!-- </div> -->
 			</div>
 		</section>
 
@@ -288,19 +285,20 @@
 		<div class="wrapper">
 			<h2>Contact</h2>
 			
-			<form action="" class="clearfix">
+			<form action="https://formspree.io/hello@christinalaba.com" method="POST" class="clearfix">
 				<label for="name" class="visuallyhidden">Name</label>
-				<input type="text" class="name" placeholder="Your name">
+				<input type="text" class="name" placeholder="Your name" name="user-name">
 				
 				<label for="name" class="visuallyhidden">Email</label>
-				<input type="email" class="email" placeholder="Your e-mail">
+				<input type="email" class="email" placeholder="Your e-mail" name="user-email">
 				
 				<label for="message" class="visuallyhidden">Message</label>
 				<textarea name="mesage" placeholder="Your message" id="messageBox" cols="30" rows="7"></textarea>
 				
 				<input type="submit" class ="send" value="Send" >
 			</form>
-			<p>hello@christinalaba.com</p>
+			<a href="mailto:hello@christinalaba.com">hello@christinalaba.com</a>
+		
 			<div class="social-icons">
 				<a href="https://www.linkedin.com/in/christinalaba"><i class="fab fa-linkedin-in">
 				</i></a>
@@ -319,7 +317,7 @@
 			<img src="./public/styles/assets/Arrow.png" alt="">
 		</div>
 		<div class="credits clearfix">
-			<p>&copy; Christina Laba</p>
+			<p>&copy; Christina Laba 2018</p>
 			<p class="sources">Product photography by Rohaan Agalawatte and Danielle Schon</p>
 		</div>
 	</footer>
