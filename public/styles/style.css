@@ -366,7 +366,8 @@ ul {
     line-height: 2.2rem; } }
 
 section {
-  height: 100vh; }
+  height: 100vh;
+  border: 1px solid pink; }
 
 .right, .left {
   width: 50%;
@@ -409,7 +410,8 @@ section {
   height: 60vh; }
 
 h3 {
-  margin-top: 30px; }
+  margin-top: 30px;
+  cursor: pointer; }
 
 .pinkWave {
   top: 5%;
@@ -512,7 +514,8 @@ h3 {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    height: 60%; }
     #soundtrak .left .soundtrakPhone img {
       width: 30vh; }
   #soundtrak .left .tealTriangle {
@@ -602,7 +605,8 @@ h3 {
     #soundtrak .left {
       margin-top: 0px; }
       #soundtrak .left .soundtrakPhone {
-        width: 28vh; }
+        width: 28vh;
+        height: 100%; }
         #soundtrak .left .soundtrakPhone img {
           width: 100%; }
     #soundtrak .right {

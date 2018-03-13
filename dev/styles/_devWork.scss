@@ -1,6 +1,6 @@
 section{
     height: 100vh;
-    // border: 1px solid pink;
+    border: 1px solid pink;
 }
 
 .right, .left{
@@ -46,6 +46,7 @@ section{
 
 h3{
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .pinkWave{
@@ -187,6 +188,7 @@ h3{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                height: 60%;
                 img{
                     width: 30vh;
                 }
@@ -266,6 +268,7 @@ h3{
             margin-top: 0px;
             .soundtrakPhone{
                 width: 28vh;
+                height: 100%;
                 img{
                     width: 100%;
                 }
