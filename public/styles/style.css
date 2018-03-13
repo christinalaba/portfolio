@@ -528,6 +528,8 @@ h3 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse; }
+  #soundtrak .right .soundtrakText {
+    padding-right: 10%; }
 
 .soundtrakLogo {
   height: 100px;
@@ -637,11 +639,45 @@ h3 {
     width: 48px;
     margin-top: -51px; } }
 
-#psdConversion .left {
-  margin-top: 10vh; }
-
 .psdMockUps img {
-  width: 30%; }
+  width: 100%;
+  overflow: scroll; }
+
+#psdConversion {
+  position: relative; }
+  #psdConversion .left {
+    background: #F4E8E2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 75%;
+    height: 60vh;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(235, 235, 235, 0.2);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(235, 235, 235, 0.2);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #psdConversion .left .psdText {
+      max-width: 600px; }
+  #psdConversion .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 25%;
+    position: relative; }
+    #psdConversion .right img {
+      margin: 0 0 5% -50%;
+      z-index: 99;
+      position: relative;
+      width: 65vh;
+      left: -30vh; }
 
 #contact {
   background: #F4E8E2;

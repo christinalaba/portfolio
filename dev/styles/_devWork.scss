@@ -202,6 +202,9 @@ h3{
     
     .right{
         flex-direction: column-reverse;
+        .soundtrakText{
+            padding-right: 10%;
+        }
     }
 }
 
@@ -339,19 +342,56 @@ h3{
 
 //PSD Conversion
 
-
-#psdConversion{
-    .left{
-        margin-top: 10vh;
-    }
-}
-
-
-
 .psdMockUps{
     img{
-        width: 30%;
+        width: 100%;
+        overflow: scroll;
     }
 }
+
+
+#psdConversion{
+    position: relative;
+    .left{
+        background: $primarycolor;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 75%;
+        height: 60vh;
+        // margin-top: 10%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(235, 235, 235, 0.2);
+        justify-content: center;
+        .psdText{
+            max-width: 600px;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 25%;
+        position: relative;
+        img{
+            margin: 0 0 5% -50%;
+            z-index: 99;
+            position: relative;
+            width: 65vh;
+            left: -30vh;
+        }
+    }
+}
+
+// .longScroll{
+//    overflow: scroll;
+//     position: absolute;
+//     z-index: 1;
+//     // width: 142%;
+//     top: 51vh;
+//     // background: red;
+//     height: 218px;
+//     left: -190px;
+//     img{
+//     }
+// }
 
 
