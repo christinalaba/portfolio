@@ -31,15 +31,34 @@ h2{
 	font-family: $primaryfont;
 	font-weight: 700;
 	font-size: 3.5rem;
-	 letter-spacing: 2px;
+	letter-spacing: 2px;
+}
+
+@media(max-width:330px){
+	h2{
+		 font-size: 3rem;
+	}
 }
 
 h1{
 	font-family: $primaryfont;
 	font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 2px;
 }
+
+@media (max-width:400px){
+	h1{
+		letter-spacing: 0;
+	}
+}
+
+@media (max-width:370px){
+	h1{
+		 font-size: 4rem;
+	}
+}
+
 
 ul{
 	padding: 0;

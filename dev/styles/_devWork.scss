@@ -16,7 +16,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
+    padding-top: 28%;
 
     img{
         width: 90%;
@@ -47,7 +47,7 @@ h3{
 }
 
 .pinkWave{
-    top: 8%;
+    top: 12%;
     right: 22%;
 }
 
@@ -86,11 +86,6 @@ h3{
 }
 
 
-@media (max-width:620px){
-
-}
-
-
 @media (max-width:500px){
     #vaporwave .left {
         height: 40vh;
@@ -100,6 +95,15 @@ h3{
     }
     h3 {
         margin-top: 0px;
+    }
+}
+
+@media (max-width:378px){
+    .vwaveText{
+        h2{
+            line-height: 4rem;
+            margin-top: 10px;
+        }
     }
 }
 
@@ -352,6 +356,7 @@ h3{
 
 //PSD Conversion
 
+  
 
 #psdConversion{
     position: relative;
@@ -375,11 +380,11 @@ h3{
         width: 25%;
         position: relative;
         img{
-            margin: 0 0 5% -50%;
+            margin: 0 0 15% -50%;
             z-index: 99;
             position: relative;
             width: 65vh;
-            left: -30vh;
+            left: -21vh;
         }
     }
 }

@@ -149,11 +149,23 @@ h2 {
   font-size: 3.5rem;
   letter-spacing: 2px; }
 
+@media (max-width: 330px) {
+  h2 {
+    font-size: 3rem; } }
+
 h1 {
   font-family: "Josefin Slab", serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 5rem;
   letter-spacing: 2px; }
+
+@media (max-width: 400px) {
+  h1 {
+    letter-spacing: 0; } }
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 4rem; } }
 
 ul {
   padding: 0; }
@@ -181,7 +193,10 @@ a {
     transform: translate(-50%, -50%);
     z-index: 9; }
     #splashPage .headingText .web {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      margin-bottom: 0; }
+    #splashPage .headingText .internet {
+      margin-top: 0; }
 
 .shape {
   position: absolute; }
@@ -391,7 +406,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15%; }
+  padding-top: 28%; }
   .vwaveLaptop img {
     width: 90%;
     max-width: 500px;
@@ -414,7 +429,7 @@ h3 {
   cursor: pointer; }
 
 .pinkWave {
-  top: 8%;
+  top: 12%;
   right: 22%; }
 
 @media (max-width: 800px) {
@@ -446,6 +461,11 @@ h3 {
     padding: 0; }
   h3 {
     margin-top: 0px; } }
+
+@media (max-width: 378px) {
+  .vwaveText h2 {
+    line-height: 4rem;
+    margin-top: 10px; } }
 
 #baloo .left {
   background: #F4E8E2;
