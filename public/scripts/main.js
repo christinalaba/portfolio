@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var portfolio = {};
 
@@ -8,6 +8,10 @@ portfolio.scroll = function () {
             offset: 0,
             speed: 600
         });
+    });
+
+    $(".backToTop").on("click", function () {
+        $("html").animate({ scrollTop: 0 }, "slow");
     });
 };
 

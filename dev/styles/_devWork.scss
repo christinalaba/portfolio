@@ -17,21 +17,16 @@ section{
     justify-content: center;
     align-items: center;
     padding-top: 15%;
-    position: relative;
+
     img{
         width: 90%;
         max-width: 500px;
         overflow: hidden;
     }
-    video{
-        width: 67%;
-        max-width: 500px;
-        position: absolute;
-        left: 15%;
-        top: 35%;
-        z-index: -1
-    }
 }
+
+
+
 
 #vaporwave{
     .right{
@@ -52,8 +47,8 @@ h3{
 }
 
 .pinkWave{
-    top: 5%;
-    right: 55%;
+    top: 8%;
+    right: 22%;
 }
 
 
@@ -65,13 +60,13 @@ h3{
     }
     .vwaveLaptop{
         img{
-            padding-bottom: 15px;
-            width: 85%;
+            padding-bottom: 35px;
+            width: 89%;
         }
         video{
-            width: 72%;
-            left: 14%;
-            top: 30%;
+            width: 64%;
+            left: 18%;
+            top: 27%;
         }
     }
 
@@ -79,7 +74,7 @@ h3{
         .right{
             .vwaveText{
                 padding-right:0;
-                padding-top: 10vh;
+                padding-top: 0;
                 position: relative;
             }
         }
@@ -90,14 +85,11 @@ h3{
     }
 }
 
-@media (max-width:567px){
-  .vwaveLaptop{
-        video{
-            // width: 69%;
-            // margin-bottom: 14px;
-        }
-    }
+
+@media (max-width:620px){
+
 }
+
 
 @media (max-width:500px){
     #vaporwave .left {

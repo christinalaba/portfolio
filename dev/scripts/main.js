@@ -8,6 +8,10 @@ portfolio.scroll = function () {
             speed: 600
         });
     });
+
+    $(".backToTop").on("click", function () {
+        $("html").animate({ scrollTop: 0 }, "slow");
+    });
 }
 
 portfolio.init = () => {

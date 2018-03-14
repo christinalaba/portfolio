@@ -6,11 +6,12 @@ $blue: #26496C;
 $bold: 700;
 
 
-$primaryfont: 'Lora', serif;
+$primaryfont:'Josefin Slab', serif;
+// $primaryfont: 'Italiana', serif;
+// $primaryfont: 'Sree Krushnadevaraya', serif;
+
 $secondfont:  'Josefin Sans', sans-serif;
 
-// $secondfont: 'Yanone Kaffeesatz', sans-serif;
-// $primaryfont: 'PT Sans Narrow', sans-serif;
 
 html{
 font-size: 62.5%;
@@ -28,6 +29,16 @@ color: $blue;
 
 h2{
 	font-family: $primaryfont;
+	font-weight: 700;
+	font-size: 3.5rem;
+	 letter-spacing: 2px;
+}
+
+h1{
+	font-family: $primaryfont;
+	font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: 2px;
 }
 
 ul{
