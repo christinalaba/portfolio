@@ -1,0 +1,90 @@
+// YNOT
+#vaporwave{
+    .left{
+        .vwaveLaptop{
+            .ynotBag{
+                width: 90%
+            }
+        }
+    }
+}
+
+
+
+// FRINGE PURSE
+#baloo{
+    .left.purse{
+        cursor:default;
+        .fringePurse{
+            max-width: 600px;
+            cursor: default;
+            &:hover{
+                cursor: default;
+            }
+        }
+    }
+    .right{
+        img.fringePhoto{
+             cursor: default;
+             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    #baloo{
+    .right{
+        img.fringePhoto{
+             width: 80%;
+        }
+    }
+}
+}
+
+// Folding Wallet
+#soundtrak{
+    .left.foldingWallet{
+        .soundtrakPhone{
+            img{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    #soundtrak{
+    .left.foldingWallet{
+        .soundtrakPhone{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+}
+
+
+// OIL LAMP
+#psdConversion{
+    .right.oilLampPhoto{
+        img{
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    #psdConversion{
+    .right.oilLampPhoto{
+        width: 80%;
+        img{
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+}

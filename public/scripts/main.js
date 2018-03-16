@@ -15,8 +15,21 @@ portfolio.scroll = function () {
     });
 };
 
+portfolio.togglePortfolio = function () {
+    $('.devWorkToggle').on('click', function () {
+        $('aside').toggleClass('hide');
+        $('main').toggleClass('hide');
+    });
+
+    $('.productWorkToggle').on('click', function () {
+        $('aside').toggleClass('hide');
+        $('main').toggleClass('hide');
+    });
+};
+
 portfolio.init = function () {
     portfolio.scroll();
+    portfolio.togglePortfolio();
 };
 
 $(function () {

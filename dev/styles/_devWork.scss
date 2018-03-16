@@ -25,9 +25,6 @@ section{
     }
 }
 
-
-
-
 #vaporwave{
     .right{
         flex-direction: column-reverse;
@@ -50,7 +47,6 @@ h3{
     top: 12%;
     right: 22%;
 }
-
 
 @media (max-width: 800px){
     .right, .left{
@@ -110,6 +106,7 @@ h3{
 //BALOOS BALOONS
 #baloo{
     .left{
+       
         background: $primarycolor;
         display: flex;
         -webkit-box-align: center;
@@ -123,6 +120,9 @@ h3{
         }
         .balooText{
             max-width: 600px;
+        }
+        p{
+             cursor: pointer;
         }
     }
     .right{
@@ -355,9 +355,6 @@ h3{
 
 
 //PSD Conversion
-
-  
-
 #psdConversion{
     position: relative;
     .left{
@@ -423,4 +420,14 @@ h3{
             }
         }
     }
+}
+
+// aside{
+//     display:none;
+// }
+
+    
+
+.hide{
+    display: none;
 }

@@ -3,6 +3,7 @@
     height: 100vh;
     position: relative;
     z-index: 9;
+    overflow: hidden;
     .headingText{
         margin: 0 auto;
         text-align: center;
@@ -15,7 +16,7 @@
         z-index: 9;
         .web{
             font-size: 1.8rem;
-            margin-bottom: 0;x
+            margin-bottom: 0;
         }
         .internet{
             margin-top: 0;

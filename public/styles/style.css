@@ -182,7 +182,8 @@ a {
   background: #F4E8E2;
   height: 100vh;
   position: relative;
-  z-index: 9; }
+  z-index: 9;
+  overflow: hidden; }
   #splashPage .headingText {
     margin: 0 auto;
     text-align: center;
@@ -484,6 +485,8 @@ h3 {
     cursor: url("../../public/styles/assets/fightCat.png") 20 20, auto; }
   #baloo .left .balooText {
     max-width: 600px; }
+  #baloo .left p {
+    cursor: pointer; }
 
 #baloo .right {
   -webkit-box-orient: vertical;
@@ -693,11 +696,11 @@ h3 {
     width: 25%;
     position: relative; }
     #psdConversion .right img {
-      margin: 0 0 5% -50%;
+      margin: 0 0 15% -50%;
       z-index: 99;
       position: relative;
       width: 65vh;
-      left: -30vh; }
+      left: -21vh; }
 
 @media (max-width: 800px) {
   #psdConversion .left {
@@ -716,6 +719,49 @@ h3 {
 @media (max-width: 600px) {
   #psdConversion .right img {
     margin: -25% auto; } }
+
+.hide {
+  display: none; }
+
+#vaporwave .left .vwaveLaptop .ynotBag {
+  width: 90%; }
+
+#baloo .left.purse {
+  cursor: default; }
+  #baloo .left.purse .fringePurse {
+    max-width: 600px;
+    cursor: default; }
+    #baloo .left.purse .fringePurse:hover {
+      cursor: default; }
+
+#baloo .right img.fringePhoto {
+  cursor: default;
+  width: 100%; }
+
+@media (max-width: 800px) {
+  #baloo .right img.fringePhoto {
+    width: 80%; } }
+
+#soundtrak .left.foldingWallet .soundtrakPhone img {
+  width: 70%; }
+
+@media (max-width: 800px) {
+  #soundtrak .left.foldingWallet .soundtrakPhone {
+    width: 100%;
+    height: 100%; }
+    #soundtrak .left.foldingWallet .soundtrakPhone img {
+      width: 80%; } }
+
+#psdConversion .right.oilLampPhoto img {
+  width: 100%;
+  left: 0; }
+
+@media (max-width: 800px) {
+  #psdConversion .right.oilLampPhoto {
+    width: 80%; }
+    #psdConversion .right.oilLampPhoto img {
+      width: 100%;
+      left: 0; } }
 
 #contact {
   background: #F4E8E2;
