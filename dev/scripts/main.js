@@ -17,13 +17,17 @@ portfolio.scroll = function () {
 
 portfolio.togglePortfolio = function () {
     $('.devWorkToggle').on('click', function () {
-        $('aside').toggleClass('hide');
-        $('main').toggleClass('hide');
+        $('aside').addClass('hide');
+        $('main').removeClass('hide');
+        $('.devWorkToggle').css("color", "#A3EACD");
+        $('.productWorkToggle').css("color", "#26496C");
     });
 
     $('.productWorkToggle').on('click', function () {
-        $('aside').toggleClass('hide');
-        $('main').toggleClass('hide');
+        $('aside').removeClass('hide');
+        $('main').addClass('hide');
+        $('.productWorkToggle').css("color", "#A3EACD");
+        $('.devWorkToggle').css("color", "#26496C");
     });
 }
 
@@ -37,15 +41,3 @@ portfolio.init = () => {
 $(function(){
     portfolio.init();
 })
-
-
-
-// netflixChow.flickityMovie = function () {
-//     $('.movie-results').flickity({
-//         cellAlign: 'left',
-//         contain: true,
-//         pageDots: false,
-//         wrapAround: true
-//     });
-
-// }

@@ -182,7 +182,7 @@ a {
   background: #F4E8E2;
   height: 100vh;
   position: relative;
-  z-index: 9;
+  z-index: 999;
   overflow: hidden; }
   #splashPage .headingText {
     margin: 0 auto;
@@ -192,7 +192,7 @@ a {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    z-index: 9; }
+    z-index: 999; }
     #splashPage .headingText .web {
       font-size: 1.8rem;
       margin-bottom: 0; }
@@ -265,11 +265,15 @@ a {
   100% {
     top: 5px; } }
 
+@media (max-width: 350px) {
+  h1 {
+    font-size: 3rem; } }
+
 nav {
   position: fixed;
   width: 100%;
   background: white;
-  z-index: 1;
+  z-index: 99;
   -webkit-box-shadow: 0 1px 3px rgba(125, 125, 125, 0.1), 0 1px 2px rgba(255, 255, 255, 0.2);
           box-shadow: 0 1px 3px rgba(125, 125, 125, 0.1), 0 1px 2px rgba(255, 255, 255, 0.2); }
 
@@ -697,7 +701,7 @@ h3 {
     position: relative; }
     #psdConversion .right img {
       margin: 0 0 15% -50%;
-      z-index: 99;
+      z-index: 9;
       position: relative;
       width: 65vh;
       left: -21vh; }
@@ -762,6 +766,10 @@ h3 {
     #psdConversion .right.oilLampPhoto img {
       width: 100%;
       left: 0; } }
+
+@media (max-width: 350px) {
+  #psdConversion .right.oilLampPhoto img {
+    margin-top: -20px; } }
 
 #contact {
   background: #F4E8E2;
