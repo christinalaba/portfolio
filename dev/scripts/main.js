@@ -1,6 +1,5 @@
 const portfolio = {};
 
-
 portfolio.scroll = function () {
     $(function () {
         $('a').smoothScroll({
@@ -35,6 +34,13 @@ portfolio.togglePortfolio = function () {
 portfolio.init = () => {
     portfolio.scroll();
     portfolio.togglePortfolio();
+    portfolio.homeAnimation();
+    console.log('init')
+}
+
+portfolio.homeAnimation = function (){
+    console.log("we be tweening");
+    TweenMax.to(".shape", 1, { rotation: 360, repeat:-1, yoyo:true });
 }
 
 
