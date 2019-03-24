@@ -815,8 +815,8 @@ form {
     form .send:active {
       position: relative;
       bottom: -3px;
-      -webkit-box-shadow: 0 0px 0 black, 0 0px 0px transparent;
-              box-shadow: 0 0px 0 black, 0 0px 0px transparent; }
+      -webkit-box-shadow: 0 0px 0 black, 0 0px 0px rgba(0, 0, 0, 0);
+              box-shadow: 0 0px 0 black, 0 0px 0px rgba(0, 0, 0, 0); }
 
 input, textarea {
   border: none;

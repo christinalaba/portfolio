@@ -30,20 +30,18 @@ portfolio.togglePortfolio = function () {
     });
 }
 
-
 portfolio.init = () => {
     portfolio.scroll();
     portfolio.togglePortfolio();
     portfolio.homeAnimation();
-    console.log('init')
 }
 
-portfolio.homeAnimation = function (){
-    console.log("we be tweening");
-    TweenMax.to(".shape", 1, { rotation: 360, repeat:-1, yoyo:true });
+portfolio.homeAnimation = function () {
+    TweenMax.staggerFrom([".tealCircle", ".darkBlueTriangle", ".greyWave"], 7, { rotation: 360, transformOrigin: "bottom right", repeat: -1, ease: Power0.easeNone }, 0.1);
+    TweenMax.staggerFrom([".yellowCircle", ".pinkSquiggle", ".greenSquare"], 5.5, { rotation: 360, transformOrigin: "bottom right", repeat: -1, ease: Power0.easeNone }, 0.3);
 }
 
 
-$(function(){
+$(function () {
     portfolio.init();
 })

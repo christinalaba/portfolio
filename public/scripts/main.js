@@ -1,4 +1,6 @@
-const portfolio = {};
+"use strict";
+
+var portfolio = {};
 
 portfolio.scroll = function () {
     $(function () {
@@ -11,8 +13,7 @@ portfolio.scroll = function () {
     $(".backToTop").on("click", function () {
         $("html").animate({ scrollTop: 0 }, "slow");
     });
-}
-
+};
 
 portfolio.togglePortfolio = function () {
     $('.devWorkToggle').on('click', function () {
@@ -28,20 +29,19 @@ portfolio.togglePortfolio = function () {
         $('.productWorkToggle').css("color", "#A3EACD");
         $('.devWorkToggle').css("color", "#26496C");
     });
-}
+};
 
-portfolio.init = () => {
+portfolio.init = function () {
     portfolio.scroll();
     portfolio.togglePortfolio();
     portfolio.homeAnimation();
-}
+};
 
 portfolio.homeAnimation = function () {
-    TweenMax.staggerFrom([".tealCircle", ".darkBlueTriangle", ".greyWave"], 7, {rotation: 360, transformOrigin: "bottom right", repeat: -1, ease: Power0.easeNone }, 0.1);
-    TweenMax.staggerFrom([".yellowCircle", ".pinkSquiggle", ".greenSquare"], 5.5, {rotation: 360, transformOrigin: "bottom right", repeat: -1, ease: Power0.easeNone }, 0.3);
-}
-
+    TweenMax.staggerFrom([".tealCircle", ".darkBlueTriangle", ".greyWave"], 7, { rotation: 360, transformOrigin: "bottom right", repeat: -1, ease: Power0.easeNone }, 0.1);
+    TweenMax.staggerFrom([".yellowCircle", ".pinkSquiggle", ".greenSquare"], 5.5, { rotation: 360, transformOrigin: "bottom right", repeat: -1, ease: Power0.easeNone }, 0.3);
+};
 
 $(function () {
     portfolio.init();
-})
+});
