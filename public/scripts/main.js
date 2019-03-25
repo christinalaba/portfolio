@@ -28,12 +28,22 @@ portfolio.togglePortfolio = function () {
         $('main').removeClass('hide');
         $('.devWorkToggle').css("color", "#A3EACD");
         $('.productWorkToggle').css("color", "#26496C");
+        '.videoWorkToggle'.css("color", "#26496C");
     });
 
     $('.productWorkToggle').on('click', function () {
         $('aside').removeClass('hide');
         $('main').addClass('hide');
         $('.productWorkToggle').css("color", "#A3EACD");
+        $('.devWorkToggle').css("color", "#26496C");
+        $('.videoWorkToggle').css("color", "#26496C");
+    });
+
+    $('.videoWorkToggle').on('click', function () {
+        $('aside').addClass('hide');
+        $('main').addClass('hide');
+        $('.videoWorkToggle').css("color", "#A3EACD");
+        $('.productWorkToggle').css("color", "#26496C");
         $('.devWorkToggle').css("color", "#26496C");
     });
 };
@@ -52,24 +62,31 @@ portfolio.scrollMagic = function () {
     // build scene
     var scene = new ScrollMagic.Scene({
         triggerElement: "#about",
-        duration: 500,
-        offset: 150,
+        duration: 350,
+        offset: 200,
         tweenChanges: true
-    }).setClassToggle(".blueSquare", "rotate-in").addTo(controller);
+    }).setClassToggle(".blueSquare", "rotate-in")
+    // .addIndicators()
+    .addTo(controller);
+    // scene.setTween(TweenMax.to(".blueSquare", 8, { yoyo:true, repeat: -1, rotation: 360, ease: Linear.easeNone }));
 
     var scene2 = new ScrollMagic.Scene({
         triggerElement: "#vaporwave",
-        duration: 500,
-        offset: 20,
+        duration: 230,
+        offset: 200,
         tweenChanges: true
-    }).setClassToggle(".pinkWave", "move-aside").addTo(controller);
+    }).setClassToggle(".pinkWave", "move-aside")
+    // .addIndicators()
+    .addTo(controller);
 
     var scene3 = new ScrollMagic.Scene({
         triggerElement: "#soundtrak",
-        duration: 500,
-        offset: 150,
+        duration: 200,
+        offset: 200,
         tweenChanges: true
-    }).setClassToggle(".tealTriangle", "rotate-in").addTo(controller);
+    }).setClassToggle(".tealTriangle", "rotate-in")
+    // .addIndica√tors()
+    .addTo(controller);
 };
 
 $(function () {
