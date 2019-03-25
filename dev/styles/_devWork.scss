@@ -26,6 +26,7 @@ section{
 }
 
 #vaporwave{
+    overflow: hidden;
     .right{
         flex-direction: column-reverse;
         .vwaveText{
@@ -200,6 +201,7 @@ h3{
 
 //SOUNTRAK
 #soundtrak{
+    overflow: hidden;
     .left{
         position: relative;
         margin-top: 10vh;
@@ -239,11 +241,9 @@ h3{
   width: 100px;
   display:flex;
   align-items: center;
-  position: relative;
-  left: -50%;
-    margin-top: -96px;    
-    position: absolute;
-    left: 31%;
+  position: absolute; 
+  left: 27%;
+    top: 19%;
 }
 
 .line{
@@ -305,11 +305,16 @@ h3{
                     width: 100%;
                 }
             }
+            .soundtrakLogo {
+              left: 33%;
+                top: 26%;
+            }
         }
         .right{
             margin-top: 10vh;
             order: -1;
         }
+
     }
 }
 
@@ -344,10 +349,10 @@ h3{
     }
 
     .soundtrakLogo {
-           height: 60px;
+        height: 60px;
         width: 60px;
-        top: 59%;
-        left: 38%;
+        // top: 59%;
+        // left: 38%;
     }
 }
 
@@ -364,7 +369,7 @@ h3{
     .soundtrakLogo {
        height: 38px;
         width: 38px;
-        margin-top: -57px;
+         margin-left: 5%;
     }
     
 }

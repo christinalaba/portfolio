@@ -425,17 +425,18 @@ section {
     max-width: 500px;
     overflow: hidden; }
 
-#vaporwave .right {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; }
-  #vaporwave .right .vwaveText {
-    padding-right: 10%;
-    position: relative; }
-
-#vaporwave .left {
-  height: 60vh; }
+#vaporwave {
+  overflow: hidden; }
+  #vaporwave .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    #vaporwave .right .vwaveText {
+      padding-right: 10%;
+      position: relative; }
+  #vaporwave .left {
+    height: 60vh; }
 
 h3 {
   margin-top: 30px;
@@ -548,43 +549,44 @@ h3 {
   .wrapper {
     line-height: 2.5rem; } }
 
-#soundtrak .left {
-  position: relative;
-  margin-top: 10vh; }
-  #soundtrak .left .soundtrakPhone {
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 60%;
-    position: relative; }
-    #soundtrak .left .soundtrakPhone img {
-      width: 30vh; }
-  #soundtrak .left .tealTriangle {
-    right: -50%;
-    bottom: -30%;
-    z-index: -1;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-    -webkit-transition: all 3s ease-out;
-    transition: all 3s ease-out; }
-  #soundtrak .left .rotate-in {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); }
-
-#soundtrak .right {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; }
-  #soundtrak .right .soundtrakText {
-    padding-right: 10%; }
+#soundtrak {
+  overflow: hidden; }
+  #soundtrak .left {
+    position: relative;
+    margin-top: 10vh; }
+    #soundtrak .left .soundtrakPhone {
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 60%;
+      position: relative; }
+      #soundtrak .left .soundtrakPhone img {
+        width: 30vh; }
+    #soundtrak .left .tealTriangle {
+      right: -50%;
+      bottom: -30%;
+      z-index: -1;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transition: all 3s ease-out;
+      transition: all 3s ease-out; }
+    #soundtrak .left .rotate-in {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg); }
+  #soundtrak .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    #soundtrak .right .soundtrakText {
+      padding-right: 10%; }
 
 .soundtrakLogo {
   height: 100px;
@@ -595,11 +597,9 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  left: -50%;
-  margin-top: -96px;
   position: absolute;
-  left: 31%; }
+  left: 27%;
+  top: 19%; }
 
 .line {
   width: 10%;
@@ -669,6 +669,9 @@ h3 {
         height: 100%; }
         #soundtrak .left .soundtrakPhone img {
           width: 100%; }
+      #soundtrak .left .soundtrakLogo {
+        left: 33%;
+        top: 26%; }
     #soundtrak .right {
       margin-top: 10vh;
       -webkit-box-ordinal-group: 0;
@@ -686,9 +689,7 @@ h3 {
     margin-top: 0; }
   .soundtrakLogo {
     height: 60px;
-    width: 60px;
-    top: 59%;
-    left: 38%; } }
+    width: 60px; } }
 
 @media (max-width: 330px) {
   #soundtrak .left .soundtrakPhone img {
@@ -696,7 +697,7 @@ h3 {
   .soundtrakLogo {
     height: 38px;
     width: 38px;
-    margin-top: -57px; } }
+    margin-left: 5%; } }
 
 main #psdConversion {
   display: none; }
