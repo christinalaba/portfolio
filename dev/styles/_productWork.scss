@@ -48,6 +48,16 @@
             img{
                 width: 70%;
             }
+            .tealTriangle{
+               right: -50%;
+               bottom: -30%;
+               z-index: -1;
+               transform: rotate(0);
+               transition: all 3s ease-out;
+           }
+           .rotate-out{
+               transform: rotate(360deg);
+           }
         }
     }
 }

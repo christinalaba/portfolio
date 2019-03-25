@@ -343,7 +343,15 @@ ul {
 .blueSquare {
   position: absolute;
   bottom: -46px;
-  right: 30%; }
+  right: 30%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.rotate-in {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 @media (max-width: 700px) {
   .aboutText {
@@ -434,8 +442,17 @@ h3 {
   cursor: pointer; }
 
 .pinkWave {
+  position: absolute;
   top: 12%;
-  right: 22%; }
+  right: 22%;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.move-aside {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px); }
 
 @media (max-width: 800px) {
   .right, .left {
@@ -545,13 +562,21 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 60%; }
+    height: 60%;
+    position: relative; }
     #soundtrak .left .soundtrakPhone img {
       width: 30vh; }
   #soundtrak .left .tealTriangle {
-    right: 20%;
-    bottom: 20%;
-    z-index: -1; }
+    right: -50%;
+    bottom: -30%;
+    z-index: -1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: all 3s ease-out;
+    transition: all 3s ease-out; }
+  #soundtrak .left .rotate-in {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
 
 #soundtrak .right {
   -webkit-box-orient: vertical;
@@ -572,7 +597,9 @@ h3 {
           align-items: center;
   position: relative;
   left: -50%;
-  margin-top: -96px; }
+  margin-top: -96px;
+  position: absolute;
+  left: 31%; }
 
 .line {
   width: 10%;
@@ -658,17 +685,21 @@ h3 {
   #soundtrak .right h2 {
     margin-top: 0; }
   .soundtrakLogo {
-    height: 80px;
-    width: 80px;
-    margin-top: -77px; } }
+    height: 60px;
+    width: 60px;
+    top: 59%;
+    left: 38%; } }
 
 @media (max-width: 330px) {
   #soundtrak .left .soundtrakPhone img {
     width: 48%; }
   .soundtrakLogo {
-    height: 48px;
-    width: 48px;
-    margin-top: -51px; } }
+    height: 38px;
+    width: 38px;
+    margin-top: -57px; } }
+
+main #psdConversion {
+  display: none; }
 
 #psdConversion {
   position: relative; }
@@ -748,6 +779,19 @@ h3 {
 
 #soundtrak .left.foldingWallet .soundtrakPhone img {
   width: 70%; }
+
+#soundtrak .left.foldingWallet .soundtrakPhone .tealTriangle {
+  right: -50%;
+  bottom: -30%;
+  z-index: -1;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 3s ease-out;
+  transition: all 3s ease-out; }
+
+#soundtrak .left.foldingWallet .soundtrakPhone .rotate-out {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg); }
 
 @media (max-width: 800px) {
   #soundtrak .left.foldingWallet .soundtrakPhone {
