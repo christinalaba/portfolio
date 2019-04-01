@@ -24,8 +24,9 @@ portfolio.scroll = function () {
 
 portfolio.togglePortfolio = function () {
     $('.devWorkToggle').on('click', function () {
+        $('#devWork').removeClass('hide');
+        $('#videoWork').addClass('hide');
         $('aside').addClass('hide');
-        $('main').removeClass('hide');
         $('.devWorkToggle').css("color", "#A3EACD");
         $('.productWorkToggle').css("color", "#26496C");
         '.videoWorkToggle'.css("color", "#26496C");
@@ -33,15 +34,17 @@ portfolio.togglePortfolio = function () {
 
     $('.productWorkToggle').on('click', function () {
         $('aside').removeClass('hide');
-        $('main').addClass('hide');
+        $('#devWork').addClass('hide');
+        $('#videoWork').addClass('hide');
         $('.productWorkToggle').css("color", "#A3EACD");
         $('.devWorkToggle').css("color", "#26496C");
         $('.videoWorkToggle').css("color", "#26496C");
     });
 
     $('.videoWorkToggle').on('click', function () {
+        $('#videoWork').removeClass('hide');
         $('aside').addClass('hide');
-        $('main').addClass('hide');
+        $('#devWork').addClass('hide');
         $('.videoWorkToggle').css("color", "#A3EACD");
         $('.productWorkToggle').css("color", "#26496C");
         $('.devWorkToggle').css("color", "#26496C");

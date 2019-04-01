@@ -1,4 +1,5 @@
 $primarycolor: #F4E8E2;
+
 $blue: #26496C;
 
 // $accentfont: 'arial';
@@ -32,6 +33,7 @@ h2{
 	font-weight: 700;
 	font-size: 3.5rem;
 	letter-spacing: 2px;
+	line-height: 4rem;
 }
 
 @media(max-width:330px){
@@ -44,7 +46,8 @@ h1{
 	font-family: $primaryfont;
 	font-weight: 700;
     font-size: 5rem;
-    letter-spacing: 2px;
+	letter-spacing: 2px;
+	line-height: 30px;
 }
 
 @media (max-width:400px){

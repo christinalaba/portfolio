@@ -1,0 +1,27 @@
+#videoWork{
+    #baloo{
+        .left{
+            height: 68vh;
+            &:hover{
+                cursor: default;
+            }
+        }
+
+        .right{
+            img{
+                width: 350px;
+            }
+        }
+    }
+}
+
+ @media (max-width: 800px){
+     #videoWork{
+         #baloo{
+            .right img {
+                width: 60%;
+                margin-top: -5%;
+            }
+         }
+     }  
+}

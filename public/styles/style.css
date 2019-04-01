@@ -147,7 +147,8 @@ h2 {
   font-family: "Josefin Slab", serif;
   font-weight: 700;
   font-size: 3.5rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  line-height: 4rem; }
 
 @media (max-width: 330px) {
   h2 {
@@ -157,7 +158,8 @@ h1 {
   font-family: "Josefin Slab", serif;
   font-weight: 700;
   font-size: 5rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  line-height: 30px; }
 
 @media (max-width: 400px) {
   h1 {
@@ -288,6 +290,8 @@ ul {
     ul a li {
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
+    ul a:first-child {
+      color: #A3EACD; }
     ul a:last-child {
       margin-right: 0; }
     ul a:hover {
@@ -383,7 +387,9 @@ ul {
 
 @media (max-width: 500px) {
   .aboutText {
-    width: 100%; } }
+    width: 100%; }
+    .aboutText h2 {
+      margin-bottom: 0; } }
 
 @media (max-width: 400px) {
   .wrapper {
@@ -446,8 +452,8 @@ h3 {
   position: absolute;
   top: 12%;
   right: 22%;
-  -webkit-transform: translateX(150px);
-          transform: translateX(150px);
+  -webkit-transform: translateX(113px);
+          transform: translateX(113px);
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out; }
 
@@ -499,12 +505,13 @@ h3 {
   -ms-flex-align: center;
       align-items: center;
   width: 75%;
+  min-height: 60vh;
   height: 60vh;
   margin-top: 10%;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(235, 235, 235, 0.2);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(235, 235, 235, 0.2); }
   #baloo .left:hover {
-    cursor: url("../../public/styles/assets/fightCat.png") 20 20, auto; }
+    cursor: url("../../public/styles/assets/fightCat.png") 10 10, auto; }
   #baloo .left .balooText {
     max-width: 600px; }
   #baloo .left p {
@@ -535,7 +542,7 @@ h3 {
   #baloo .right {
     width: 100%; }
     #baloo .right img {
-      margin: -15% auto;
+      margin: -6% auto;
       width: 40%; }
   .balooText {
     width: 100%; } }
@@ -815,6 +822,19 @@ main #psdConversion {
 @media (max-width: 350px) {
   #psdConversion .right.oilLampPhoto img {
     margin-top: -20px; } }
+
+#videoWork #baloo .left {
+  height: 68vh; }
+  #videoWork #baloo .left:hover {
+    cursor: default; }
+
+#videoWork #baloo .right img {
+  width: 350px; }
+
+@media (max-width: 800px) {
+  #videoWork #baloo .right img {
+    width: 60%;
+    margin-top: -5%; } }
 
 #contact {
   background: #F4E8E2;
