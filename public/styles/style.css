@@ -505,7 +505,6 @@ h3 {
   -ms-flex-align: center;
       align-items: center;
   width: 75%;
-  min-height: 60vh;
   height: 60vh;
   margin-top: 10%;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(235, 235, 235, 0.2);
@@ -763,6 +762,12 @@ main #psdConversion {
   #psdConversion .right img {
     margin: -25% auto; } }
 
+#baloo.rps .left:hover {
+  cursor: default; }
+
+#baloo.rps .right img.rps_mockup {
+  cursor: default; }
+
 .hide {
   display: none; }
 
@@ -829,7 +834,9 @@ main #psdConversion {
     cursor: default; }
 
 #videoWork #baloo .right img {
-  width: 350px; }
+  width: 350px;
+  margin-top: -5%;
+  cursor: default; }
 
 @media (max-width: 800px) {
   #videoWork #baloo .right img {
