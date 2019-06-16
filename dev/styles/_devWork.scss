@@ -123,9 +123,6 @@ h3{
         height: 60vh;
         margin-top: 10%;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(235, 235, 235, 0.2);
-        &:hover{
-            cursor: url('../../public/styles/assets/fightCat.png')10 10, auto;
-        }
         .balooText{
             max-width: 600px;
         }
@@ -138,12 +135,14 @@ h3{
         width: 25%;
         img{
             margin: 0 0 5% -50%;
-            &:hover{
-            cursor: url('../../public/styles/assets/fightCat.png')20 20, auto;
-        }
         }
     }
+    .banner_right{
+        width: 15%;
+    }
+   
 }
+
 
 @media (max-width:1120px){
     #baloo{
@@ -178,6 +177,9 @@ h3{
      .balooText{
         width: 100%;
     }
+    #baloo.bannerSection{
+        margin-bottom: 25%;
+    }
 }
 
 @media (max-width:600px){
@@ -185,7 +187,7 @@ h3{
         .right{
             // height: auto;
             img{
-                margin: -15% auto;
+                margin: -7% auto;
                 width: 50%;
             }
         }
@@ -283,6 +285,14 @@ h3{
   margin-right: 0;
 }
 
+//BANNER AD
+
+.bannerAd_mockup{
+    width:200px;
+}
+
+
+
 @keyframes pulse {
   50%{
     transform: scaleY(.7);
@@ -296,6 +306,7 @@ h3{
     #soundtrak{
         flex-direction: column;
         display: flex;
+        margin-bottom: 25%;
         .left{
             margin-top: 0px;
             .soundtrakPhone{
@@ -446,24 +457,12 @@ main #psdConversion{
     }
 }
 
-//Rock paper scissors{
-    #baloo.rps{
-        .left{
-            &:hover{
-                cursor: default;
-            }
-        }
-
-        .right{
-            img.rps_mockup{
-                cursor: default;;
-            }
-        }
-    }
-
-    
     
     
 .hide{
     display: none;
+}
+
+.balooB:hover{
+cursor: url('../../public/styles/assets/fightCat.png')5 5, auto;
 }

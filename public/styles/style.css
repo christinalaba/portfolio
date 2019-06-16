@@ -509,8 +509,6 @@ h3 {
   margin-top: 10%;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(235, 235, 235, 0.2);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(235, 235, 235, 0.2); }
-  #baloo .left:hover {
-    cursor: url("../../public/styles/assets/fightCat.png") 10 10, auto; }
   #baloo .left .balooText {
     max-width: 600px; }
   #baloo .left p {
@@ -524,8 +522,9 @@ h3 {
   width: 25%; }
   #baloo .right img {
     margin: 0 0 5% -50%; }
-    #baloo .right img:hover {
-      cursor: url("../../public/styles/assets/fightCat.png") 20 20, auto; }
+
+#baloo .banner_right {
+  width: 15%; }
 
 @media (max-width: 1120px) {
   #baloo .left .balooText {
@@ -544,11 +543,13 @@ h3 {
       margin: -6% auto;
       width: 40%; }
   .balooText {
-    width: 100%; } }
+    width: 100%; }
+  #baloo.bannerSection {
+    margin-bottom: 25%; } }
 
 @media (max-width: 600px) {
   #baloo .right img {
-    margin: -15% auto;
+    margin: -7% auto;
     width: 50%; } }
 
 @media (max-width: 400px) {
@@ -643,6 +644,9 @@ h3 {
           animation-delay: 2.5s;
   margin-right: 0; }
 
+.bannerAd_mockup {
+  width: 200px; }
+
 @-webkit-keyframes pulse {
   50% {
     -webkit-transform: scaleY(0.7);
@@ -667,7 +671,8 @@ h3 {
             flex-direction: column;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 25%; }
     #soundtrak .left {
       margin-top: 0px; }
       #soundtrak .left .soundtrakPhone {
@@ -762,14 +767,11 @@ main #psdConversion {
   #psdConversion .right img {
     margin: -25% auto; } }
 
-#baloo.rps .left:hover {
-  cursor: default; }
-
-#baloo.rps .right img.rps_mockup {
-  cursor: default; }
-
 .hide {
   display: none; }
+
+.balooB:hover {
+  cursor: url("../../public/styles/assets/fightCat.png") 5 5, auto; }
 
 #vaporwave .left .vwaveLaptop .ynotBag {
   width: 90%; }
