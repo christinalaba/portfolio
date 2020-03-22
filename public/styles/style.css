@@ -835,15 +835,23 @@ main #psdConversion {
   #videoWork #baloo .left:hover {
     cursor: default; }
 
-#videoWork #baloo .right img {
-  width: 350px;
-  margin-top: -5%;
-  cursor: default; }
+#videoWork #baloo .right {
+  margin-top: 5%; }
+  #videoWork #baloo .right img {
+    width: 350px;
+    margin-top: -20%;
+    cursor: default; }
+  #videoWork #baloo .right .videoAd_mockup {
+    width: 250px; }
 
 @media (max-width: 800px) {
   #videoWork #baloo .right img {
     width: 60%;
-    margin-top: -5%; } }
+    margin-top: -23%; }
+  #videoWork #baloo .right .videoAd_mockup {
+    width: 40%; }
+  #videoWork #baloo .right .thunderdome_mockup {
+    margin-top: -10%; } }
 
 #contact {
   background: #F4E8E2;

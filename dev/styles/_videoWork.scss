@@ -8,10 +8,14 @@
         }
 
         .right{
+            margin-top: 5%;
             img{
                 width: 350px;
-                margin-top: -5%;
-                cursor: default;;
+                margin-top: -20%;
+                cursor: default;
+            }
+            .videoAd_mockup{
+                width: 250px;
             }
         }
     }
@@ -20,12 +24,20 @@
  @media (max-width: 800px){
      #videoWork{
          #baloo{
-            
-            .right img {
+            .right{
+                 img {
                 width: 60%;
-                margin-top: -5%;
-                
+                margin-top: -23%;
             }
+            .videoAd_mockup{
+                width: 40%;
+            }
+            .thunderdome_mockup{
+                margin-top: -10%;
+            }
+            }
+           
+
     
          }
      }  
